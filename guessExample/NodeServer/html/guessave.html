@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Guessing Game</title>
+<link rel = "stylesheet" type = "text/css" href = "guess.css" media = "all">
+</head>
+<body>
+<p>Who is playing?</p>
+<input id = "playername" type="text">
+<p>Guess a Letter</p>       
+<p id = "display" class = "letters"></p>
+<input id = "guess" type="text" maxlength='1' class = "letters" autofocus>
+<div>
+<input id = "guessbutton" type="button" value="GUESS">
+</div>
+<p>Wrong Letters</p>
+<p id = "wrong" class = "letters wrong"> </p>                
+<progress id = "indicator" value="0" max="10">
+</progress>
+<div>
+<input id = "restart" type="button" value="RESTART">
+</div>
+<script defer src="../scripts/guess.js"></script>
+</body>
+</html>
